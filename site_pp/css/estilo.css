@@ -1,0 +1,482 @@
+/*Configurações da Fonte do site*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+/*Configurações das Cores*/
+:root{
+--cor1:#c9b065;
+--cor2:#0a1130;
+--cor3:#7d6a32;
+--cor4:#ffffff;
+}
+
+/*Configurações dos Navegadores*/
+*{
+font-family: 'roboto', sans-serif;
+font-size:18px;
+font-weight: 400;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+/*Formatação do Body*/
+body{
+    background-color:var(--cor3);
+}
+
+header{
+    max-width: 95%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--cor1);
+    text-align: center;
+    border-radius: 0px 0px 12px 12px;
+    padding-top: 1rem;
+    box-shadow: 0px 4px 3px var(--cor2);
+}
+
+nav li{
+    display: inline-block;
+    margin: 2rem 1rem;
+}
+
+nav a{
+    color: var(--cor4);
+}
+
+nav a:hover{
+    color: var(--cor2);
+    border-bottom: 4px solid;
+}
+
+/*------Configurações do Main-------*/
+
+main{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*------Configurações do Banner-------*/
+
+.banner{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+/*--------Configuração da Página Cadastro---------*/
+
+.cadastro{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor1);
+    margin: 2% auto;
+    width: 90%;
+    border-radius:10px 10px 0 0;
+    color:var(--cor4);
+}
+
+
+.cad{
+    width: 80%;
+}
+
+
+.cad h1{
+
+    font-size: 1,6rem;
+    text-align: center;
+    color:var(--cor2);
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+
+#cadastro input[type="text"], input[type="email"], input[type="password"]{
+    width:400px;
+    height: 50px;
+    color:var(--cor2);
+    text-align: center;
+    border-radius:10px;
+    border:none ;
+    margin-bottom: 1%;
+}
+
+
+#cadastro input[type="radio"]{
+    margin-right: 2%;
+
+}
+
+
+
+#cadastro input[type="submit"]{
+    width: 250px;
+    height: 50px;
+    padding: 1%;
+    background-color:var(--cor2);
+    color:var(--cor4);
+    border:none;
+    margin-top:3%;
+    border-radius: 10px;
+}
+
+
+
+#cadastro input[type="submit"]:hover{
+    background-color: var(--cor3);
+    cursor:pointer;
+}
+
+.cad img{
+    width:80%;
+    height: 80%;
+    margin: 1%;
+}
+
+
+
+
+.const{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.const img{
+    width: 30%;
+    height: 30%;
+    margin: center;
+}
+
+
+
+/*Configuraçôes da página contato*/
+
+
+    .contato{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--cor1);
+        margin: 2% auto;
+        width: 90%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .cont{
+        width:80%;
+    }
+
+    .cont h1{
+        font-size: 2rem;
+        text-align: center;
+        color: var(--cor2);
+        font-weight: 700;
+        margin-bottom: 3%;
+    }
+
+    .cont form{
+        text-align: center;
+    }
+
+
+    .cont input[type="text"], input[type="email"], input[type="tel"]{
+        width: 400px;
+        height: 35px;
+        color:var(--cor2);
+        text-align: center;
+        border-radius: 10px;
+        border:none;
+        margin-bottom: 1%;
+    }
+
+    .cont textarea{
+        width:400px;
+        height: 200px;
+        color:var(--cor2);
+        text-align: center;
+        padding-top: 1%;
+        border-radius: 10px;
+        border:none;          
+    }
+
+
+
+    .cont input[type="submit"]{
+        width: 250px;
+        height: 50px;
+        padding: 1%;
+        background-color: var(--cor2);
+        color: var(--cor4);
+        border:none;
+        margin-top: 3%;
+        border-radius: 10px;
+        cursor: pointer;  
+    }
+
+
+    
+
+
+
+        
+/*CONFIGURAÇÃO DA PAGINA DE EMAIL*/
+
+    .m-conteudo{
+        width:100vw;
+        height:100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 2000;
+        display:none;
+        justify-content:center;
+        align-items: center;
+    }
+
+
+    .mostrar{
+        display:flex;
+    }
+
+
+    .modal{
+        width: 60%;
+        background-color: var(--cor1);
+        color: var(--cor4);
+        text-align: center;
+        padding: 2%;
+        border-radius: 10px;
+        margin:0 auto;
+        box-shadow: 0 0 0 5px var(--cor2);
+    }
+
+    .modal h2{
+        font-size: 2rem;
+        margin-bottom: 2%;
+
+    }
+
+    .modal p{
+        color:var(--cor2);
+    }
+
+    .modal span{
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .modal button{
+        width:250px;
+        height: 50px;
+        background-color: var(--cor2);
+        color:var(--cor4);
+        font-weight: 700;
+        padding: 1%;
+        margin-top: 2%;
+        border: none;
+        border-radius: 10px;
+
+    }
+
+    .modal button:hover{
+        background-color: var(--cor3);
+        color: var(--cor4);
+    }
+
+/**ANIMAÇÃO DO MODAL*/
+
+
+@keyframes modal{
+    from{
+        opacity:0;
+        transform: translate3d(0, -80px, 0); /** movimentação para baixo  (-80px) **/
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.mostrar .modal{
+    animation: modal 4s;
+}
+
+
+
+
+
+
+
+/**CONFIGURAÇÃO DA AREA DO USUARIO*/
+
+
+.barra_top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor2);
+    width: 95%;
+    margin: 2% auto;
+    padding: 1% 5%;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.barra h1{
+    color: var(--cor4);
+}
+
+.barra a{
+    color: var(--cor4)
+}
+
+.usuario{
+width: 95%;
+height: 500px;
+background-color: var(--cor1);
+margin: -2% auto;
+padding: 2%;
+text-align: center;
+}
+
+.usuario h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--cor2);
+}
+
+
+.usuario p{
+    color: var(--cor2)
+}
+
+
+
+
+
+
+/**CONFIGURAÇÃO DA PAGINA ENTRAR*/
+
+.login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor1);
+    margin:2% auto;
+    width: 90%;
+    border-radius: 10px 10px 0 0;
+}
+
+.logar{
+    width: 80%;
+}
+
+#logar1{
+    width: 95%;
+}
+
+.logar h1{
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--cor2);
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.logar input[type="submit"]{
+    width: 250px;
+    height: 50px;
+    background-color: var(--cor2);
+    border:none;
+    margin-top: 3%;
+    border-radius: 10px;
+    color:var(--cor4);
+}
+
+.logar input[type="submit"]:hover{
+    background-color: var(--cor3);
+    cursor: pointer;
+}
+
+.logar img{
+    margin-left: -120px;
+}
+
+
+
+
+/*------Configurações do Rodapé-------*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor3);
+    color:var(--cor4);
+    padding-top:2%;
+    text-align: center;
+}
+
+.rodape a{
+    font-size: 0.8rem;
+    color:var(--cor4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
